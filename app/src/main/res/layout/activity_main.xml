@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jashid.gato.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fila1"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="136.6dp"
+            android:layout_height="136.6dp"
+            android:id="@+id/btn1"
+            />
+        <Button
+            android:layout_width="136.6dp"
+            android:layout_height="136.6dp"
+            android:id="@+id/btn2"/>
+        <Button
+            android:layout_width="136.6dp"
+            android:layout_height="136.6dp"
+            android:id="@+id/btn3"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fila2"
+        android:orientation="horizontal"
+        android:layout_below="@+id/fila1">
+        <Button
+            android:layout_width="136.6dp"
+            android:layout_height="136.6dp"
+            android:id="@+id/btn4"/>
+        <Button
+            android:layout_width="136.6dp"
+            android:layout_height="136.6dp"
+            android:id="@+id/btn5"/>
+        <Button
+            android:layout_width="136.6dp"
+            android:layout_height="136.6dp"
+            android:id="@+id/btn6"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fila3"
+        android:orientation="horizontal"
+        android:layout_below="@+id/fila2">
+        <Button
+            android:layout_width="136.6dp"
+            android:layout_height="136.6dp"
+            android:id="@+id/btn7"/>
+        <Button
+            android:layout_width="136.6dp"
+            android:layout_height="136.6dp"
+            android:id="@+id/btn8"/>
+        <Button
+            android:layout_width="136.6dp"
+            android:layout_height="136.6dp"
+            android:id="@+id/btn9"/>
+    </LinearLayout>
+
+    //Tercer Linear Layout
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/fila3"
+    android:id="@+id/fila4"
+    android:orientation="vertical">
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_reset"
+        android:text="VOLVER A JUGAR"/>
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/fila4">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/TV_ganador"
+            android:layout_marginLeft="145dp"
+            android:layout_gravity="center"
+            android:textSize="40dp"/>
+    </LinearLayout>
+
+</RelativeLayout>
